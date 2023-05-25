@@ -1,38 +1,50 @@
 /* 
-
-    ##### ABAIXO ACONTECE RESPECTVAMENTE AS SEGUINTES AÇÕES:  #####
-
-
-- Caso já exista um Banco de dados chamado 'uvv' irá exclui-ló;
-- Caso já exista um usuário chamado 'joaodellarmelina' irá exclui-ló;
-- Criação de um Banco de Dados chamado 'uvv';
-- Comentario do Banco de Dados 'uvv';
-- Criação de um usuário chamado 'joaodellarmelina' com várias permissões e uma senha encriptografada;
-- Acessando o Banco de dados 'uvv' com o usuário 'joaodellarmelina' com a senha; 
-- Criação de um esquema chamado 'lojas';
-- Comentario do esquema 'lojas';
-- Configurando o Banco de dados 'uvv' para ter definido o SCHEMA que criamos.
-
-
+   ##############################################################
+   ####        PROJETO PARA SOLUÇÃO DO PROBLEM SET 1         ####
+   ####                                                      ####
+   ####               JOAO VITOR DELLARMELINA                ####
+   ##############################################################
+*/
+/* 
+    ##############################################################
+    #                   ABRAÇOS, ABRANTES!                       #
+    ##############################################################
 */
 
+-- Caso já exista um Banco de dados chamado 'uvv' irá exclui-ló;
 DROP DATABASE IF EXISTS uvv;
+
+-- Caso já exista um usuário chamado 'joaodellarmelina' irá exclui-ló;
 DROP ROLE IF EXISTS joaodellarmelina;
-CREATE DATABASE uvv;
-COMMENT ON DATABASE uvv is 'Banco de Dados criado para gerenciar e armazenas dados referente a lojas na uvv';
-CREATE ROLE joaodellarmelina WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'computacao@raiz';
+
+-- Criação de um usuário chamado 'joaodellarmelina' com permissões e uma senha encriptografada;
+CREATE ROLE joaodellarmelina WITH CREATEDB CREATEROLE ENCRYPTED PASSWORD 'computacao@raiz';
+
+-- Criação de um Banco de Dados chamado 'uvv';
+CREATE DATABASE uvv WITH OWNER joaodellarmelina;
+
+-- Comentario do Banco de Dados 'uvv';
+COMMENT ON DATABASE uvv is 'Banco de Dados criado para gerenciar e armazenar dados referente a lojas na uvv';
+
+-- Acessando o Banco de dados 'uvv' com o usuário 'joaodellarmelina' com a senha;
 \c "dbname=uvv user= joaodellarmelina password= computacao@raiz"
+
+-- Criação de um esquema chamado 'lojas';
 CREATE SCHEMA lojas;
+
+-- Comentario do esquema 'lojas';
 COMMENT ON SCHEMA lojas is 'Esquema criado para "organizar" as tabelas do BD uvv';
-ALTER Database uvv SET search_path TO '$user',lojas;
-SET search_path TO lojas;
+
+-- Configurando o usuário 'joaodellarmelina' para ter definido o esquema criado.
+ALTER USER joaodellarmelina SET search_path TO lojas;
 
 
--- ####################### ####################### ####################### ####################### #######################
+
+--    ######## CRIAÇÕES DE TABELAS ########
 
 
 /*
-1. CRIAÇÃO DA TABELA pedidos.
+1. CRIAÇÃO DA TABELA produtos.
 2. COMENTARIOS DA TABELA E COLUNAS
 */
 
