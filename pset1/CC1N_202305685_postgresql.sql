@@ -1,14 +1,10 @@
 /* 
-   ##############################################################
-   ####        PROJETO PARA SOLUÇÃO DO PROBLEM SET 1         ####
-   ####                                                      ####
-   ####               JOAO VITOR DELLARMELINA                ####
-   ##############################################################
-*/
-/* 
-    ##############################################################
-    #                   ABRAÇOS, ABRANTES!                       #
-    ##############################################################
+ - Universidade Vila Velha - CC1N.
+ - Banco de Dados - Problem Set 01. 
+ - João Vitor Dellarmelina
+ - @joaodellarmelina
+
+   ABRAÇOS, PROFº ABRANTES!
 */
 
 -- Caso já exista um Banco de dados chamado 'uvv' irá exclui-ló;
@@ -18,7 +14,7 @@ DROP DATABASE IF EXISTS uvv;
 DROP ROLE IF EXISTS joaodellarmelina;
 
 -- Criação de um usuário chamado 'joaodellarmelina' com permissões e uma senha encriptografada;
-CREATE ROLE joaodellarmelina WITH CREATEDB CREATEROLE ENCRYPTED PASSWORD 'computacao@raiz';
+CREATE ROLE joaodellarmelina WITH CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'computacao@raiz';
 
 -- Criação de um Banco de Dados chamado 'uvv';
 CREATE DATABASE uvv WITH OWNER joaodellarmelina;
@@ -318,3 +314,5 @@ REFERENCES lojas.pedidos (pedido_id)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
+
+

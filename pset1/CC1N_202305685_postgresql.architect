@@ -263,13 +263,13 @@
    <relationship id="REL77" populated="true" UUID="3a09792e-d69c-45d9-8ab0-3e24ed8543b7" deferrability="7" deleteRule="3" fk-table-ref="TAB32" fkCardinality="7" identifying="false" name="lojas_envios_fk" physicalName="lojas_envios_fk" pk-table-ref="TAB18" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP78" populated="true" UUID="242b4970-166a-46b5-a2f1-1546228855d1" fk-column-ref="COL34" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
    </relationship>
-   <relationship id="REL79" populated="true" UUID="0d09494a-259d-4aa8-9c56-b6b092f2b083" deferrability="7" deleteRule="3" fk-table-ref="TAB40" fkCardinality="7" identifying="false" name="lojas_estoques _fk" physicalName="lojas_estoques__fk" pk-table-ref="TAB18" pkCardinality="2" updateRule="3" >
+   <relationship id="REL79" populated="true" UUID="0d09494a-259d-4aa8-9c56-b6b092f2b083" deferrability="7" deleteRule="3" fk-table-ref="TAB40" fkCardinality="7" identifying="false" name="lojas_estoques _fk" physicalName="lojas_estoques _fk" pk-table-ref="TAB18" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP80" populated="true" UUID="668638f2-f0c4-4f6e-be1f-befe9656e4ac" fk-column-ref="COL42" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
    </relationship>
    <relationship id="REL81" populated="true" UUID="b8f3746f-ae1e-45d7-a7f0-c859226b7e78" deferrability="7" deleteRule="3" fk-table-ref="TAB59" fkCardinality="7" identifying="false" name="envios_pedidos_itens_fk" physicalName="envios_pedidos_itens_fk" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP82" populated="true" UUID="abee0bb7-4275-4c91-9413-67822ab0df26" fk-column-ref="COL65" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL33" />
    </relationship>
-   <relationship id="REL83" populated="true" UUID="d48a8b56-19fc-449a-8a8b-a2c42153590b" deferrability="7" deleteRule="3" fk-table-ref="TAB40" fkCardinality="7" identifying="false" name="produtos_estoques _fk" physicalName="produtos_estoques__fk" pk-table-ref="TAB47" pkCardinality="2" updateRule="3" >
+   <relationship id="REL83" populated="true" UUID="d48a8b56-19fc-449a-8a8b-a2c42153590b" deferrability="7" deleteRule="3" fk-table-ref="TAB40" fkCardinality="7" identifying="false" name="produtos_estoques _fk" physicalName="produtos_estoques _fk" pk-table-ref="TAB47" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP84" populated="true" UUID="740e7855-7c99-45b8-b502-eb4d0797b215" fk-column-ref="COL43" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL48" />
    </relationship>
    <relationship id="REL85" populated="true" UUID="19e04164-b8d4-4777-a316-78baf7215eb6" deferrability="7" deleteRule="3" fk-table-ref="TAB59" fkCardinality="7" identifying="true" name="produtos_pedidos_itens_fk" physicalName="produtos_pedidos_itens_fk" pk-table-ref="TAB47" pkCardinality="2" updateRule="3" >
@@ -277,7 +277,7 @@
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.MySqlDDLGenerator" allow-connection="false" target-catalog="lojas"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.MySqlDDLGenerator" allow-connection="true" target-catalog="lojas"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
