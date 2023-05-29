@@ -13,7 +13,7 @@ Precisei implementar um banco de dados no PostgreSQL, a partir de um diagrama re
 > - Operações CRUD no SQL;
 > - Resolução de problemas;
 > - Sistemas de Controle de Versões;
-> - Git e GitHub; ![Git](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
+> - Git e GitHub; ![Git](https://cdn.iconscout.com/icon/free/png-256/free-git-225996.png)
 > - Contato com o SGBD Open-Source Postgresql; ![Postgresql](https://skills.thijs.gg/icons?i=postgresql)
 > 
 > *Entre outros conhecimentos...*
