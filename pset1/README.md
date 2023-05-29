@@ -18,4 +18,4 @@ Precisei implementar um banco de dados no PostgreSQL, a partir de um diagrama re
 > 
 > *Entre outros conhecimentos...*
 
-[![Postgresql](https://skills.thijs.gg/icons?i=postgresql)]
+![Postgresql](https://skills.thijs.gg/icons?i=postgresql)
