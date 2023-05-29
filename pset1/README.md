@@ -14,7 +14,7 @@ Precisei implementar um banco de dados no PostgreSQL, a partir de um diagrama re
 > - Resolução de problemas;
 > - Sistemas de Controle de Versões;
 > - Git e GitHub;
-> - Contato com o SGBD Open-Source Postgresql
-> [![Postgresql](https://skills.thijs.gg/icons?i=postgresql)];
+> - Contato com o SGBD Open-Source Postgresql;
+> [![Postgresql](https://skills.thijs.gg/icons?i=postgresql)]
 > 
 > *Entre outros conhecimentos...*
