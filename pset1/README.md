@@ -2,9 +2,9 @@
 
 ## O que é um Problem set(PSET)?
 
-Conjunto de problemas e tarefas difíceis que forçarão a estudar e realmente compreender a matéria.
+- Conjunto de problemas e tarefas difíceis que forçarão a estudar e realmente compreender a matéria.
 
 ## Do que se trata esse **problem set**?
 
-Precisei implementar um banco de dados no PostgreSQL, a partir de um diagrama relacional.
+- Precisei implementar um banco de dados no PostgreSQL, a partir de um diagrama relacional.
 
