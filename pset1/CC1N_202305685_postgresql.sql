@@ -17,7 +17,12 @@ DROP ROLE IF EXISTS joaodellarmelina;
 CREATE ROLE joaodellarmelina WITH CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'computacao@raiz';
 
 -- Criação de um Banco de Dados chamado 'uvv';
-CREATE DATABASE uvv WITH OWNER joaodellarmelina;
+CREATE DATABASE uvv 
+     WITH 
+     OWNER = joaodellarmelina 
+     TEMPLATE = template0
+     ENCODING = 'UTF8'
+     ALLOW_CONNECTIONS = true;
 
 -- Comentario do Banco de Dados 'uvv';
 COMMENT ON DATABASE uvv is 'Banco de Dados criado para gerenciar e armazenar dados referente a lojas na uvv';
@@ -56,7 +61,7 @@ CREATE TABLE lojas.produtos (
                 imagem_arquivo          VARCHAR(512),
                 imagem_charset          VARCHAR(512),
                 imagem_ultima_atualizao DATE,
-                CONSTRAINT produto_id PRIMARY KEY (produto_id)
+                CONSTRAINT produto_id   PRIMARY KEY (produto_id)
 );
 
 -- 2.
